@@ -1,0 +1,61 @@
+<div class="row my-4">
+  <div class="col-md-8 offset-md-2">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <p>
+          <strong>Instrucciones</strong>
+        </p>
+
+        <p>
+          Se desea crear funcionalidad al formulario a través de formularios
+          reactivos o template driven, contemplando las siguientes validaciones
+        </p>
+
+        <ol>
+          <li>
+            Para los campos lastName y firstName se manejan como campos
+            requeridos, y cada uno de ellos deberá validar un minimo de 6
+            caracteres
+          </li>
+
+          <li>El campo edad es un campo requerido</li>
+        </ol>
+
+        <p>
+          En todos los campos se deberá mostrar un mensaje de retroalimentación
+          al usuario con la validación apropiado
+        </p>
+
+        <p>
+          Se deberá activar el botón de guardar solo si el formulario cumple con
+          todas las reglas de validación antes mencionadas
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<form class="row">
+  <div class="col-md-8 offset-md-2">
+    <div class="card">
+      <div class="card-header">Add User</div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="firstName" class="form-label"> First Name </label>
+          <input type="text" class="form-control" id="firstName" />
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label"> Last Name </label>
+          <input type="text" class="form-control" id="lastName" />
+        </div>
+        <div class="mb-3">
+          <label for="age" class="form-label"> Age </label>
+          <input type="text" class="form-control" id="age" />
+        </div>
+      </div>
+      <div class="card-footer text-center">
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,45 @@
+<div class="row my-4">
+  <div class="col-md-8 offset-md-2">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <p>
+          Las <kbd>Pipes</kbd> son una forma muy poderosa de transformar datos
+          en tu template. La diferencia entre llamar a una función y a un pipe
+          es que los pipes puros se memorizan. Por lo tanto, no se volverán a
+          calcular en cada ciclo de detección de cambios si sus entradas no han
+          cambiado. Los Pipes están diseñadas para ser eficientes y optimizadas
+          para el rendimiento. Utilizan mecanismos de detección de cambios para
+          recalcular el valor solo si la entrada cambia, para minimizar cálculos
+          innecesarios y mejorar el rendimiento de renderizado.
+        </p>
+
+        <p>
+          <strong>Instrucciones</strong>
+        </p>
+
+        <p>
+          En este ejercicio, llamará a múltiples funciones dentro de tu
+          template. Puedes crear un Pipe específico para cada una de las
+          funciones pero esto será demasiado engorroso. El objetivo es crear un
+          pipe wrapFn para que envuelva su función y su retorno a través de un
+          Pipe. Su función DEBE permanecer dentro de su componente. WrapFn debe
+          ser altamente reutilizable.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8 offset-md-2">
+    <div
+      class="card mb-2"
+      *ngFor="let person of persons; let index = index; let isFirst = first"
+    >
+      <div class="card-body">
+        {{ showName(person.name, index) }}
+        {{ isAllowed(person.age, isFirst) }}
+      </div>
+    </div>
+  </div>
+</div>

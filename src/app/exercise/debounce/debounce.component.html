@@ -1,0 +1,40 @@
+<div class="row my-4">
+  <div class="col-md-8 offset-md-2">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <p>
+          <strong>Instrucciones</strong>
+        </p>
+
+        <p>
+          En este ejercicio tienes una lista enorme de ciudades, las cuales se
+          necesitan pintar en pantalla pero con la busqueda de un usuario
+        </p>
+
+        <ol>
+          <li>
+            Se debe crear un buscador con debounce el cual busque por nombre de
+            ciudad
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row my-4">
+  <div class="col-md-8 offset-md-2">
+    <input type="text" class="form-control" placeholder="Search cities" />
+  </div>
+</div>
+
+<div class="grid">
+  <div *ngFor="let item of cities" class="card">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Name:</strong> {{ item.name }}</h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary"> Country: {{ item.country }} </small>
+    </div>
+  </div>
+</div>
